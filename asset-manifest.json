@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/aurora-rising.github.io/static/css/main.4a282bad.css",
-    "main.js": "/aurora-rising.github.io/static/js/main.1527c048.js",
-    "index.html": "/aurora-rising.github.io/index.html",
-    "main.4a282bad.css.map": "/aurora-rising.github.io/static/css/main.4a282bad.css.map",
-    "main.1527c048.js.map": "/aurora-rising.github.io/static/js/main.1527c048.js.map"
+    "main.css": "/aurora-rising/static/css/main.4a282bad.css",
+    "main.js": "/aurora-rising/static/js/main.1527c048.js",
+    "index.html": "/aurora-rising/index.html",
+    "main.4a282bad.css.map": "/aurora-rising/static/css/main.4a282bad.css.map",
+    "main.1527c048.js.map": "/aurora-rising/static/js/main.1527c048.js.map"
   },
   "entrypoints": [
     "static/css/main.4a282bad.css",
