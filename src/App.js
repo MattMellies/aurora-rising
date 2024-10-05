@@ -7,6 +7,7 @@ import FAQ from './pages/faq/index.js';
 import Booking from './pages/booking/index.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+const isStaging = window.location.href.includes('github') ? true : false;
 
 function App() {
   return (
@@ -15,14 +16,14 @@ function App() {
         <NavBar />
       </header>
       <main>
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/booking" element={<Booking />} />
-        </Routes>
+        <BrowserRouter basename={isStaging ? '/aurora-rising' : '/'}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/booking" element={<Booking />} />
+          </Routes>
         </BrowserRouter>
       </main>
       <footer>

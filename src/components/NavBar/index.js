@@ -27,8 +27,6 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-  console.log(pages);
   return (
     <AppBar position="static" sx={{backgroundColor: "#b4dac3"}}>
       <Container maxWidth="xl">
@@ -63,7 +61,7 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.label} onClick={handleCloseNavMenu}>
+                <MenuItem key={`${page.label}-mobile`} onClick={handleCloseNavMenu}>
                   <Link href={page.path} sx={{ textAlign: 'center', color: '#1d1640', textDecoration: 'none' }}>{page.label}</Link>
                 </MenuItem>
               ))}
@@ -71,14 +69,16 @@ function ResponsiveAppBar() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              console.log("this", page),
+              <Link href={`${page.path}`} sx={{color: "#1d1640", textDecoration: 'none'}}>
               <Button
-                key={page}
+                key={page.label}
+                tabIndex={-1}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block' }}
               >
-                <Link href={page.path} sx={{color: "#1d1640", textDecoration: 'none'}}>{page.label}</Link>
+                {page.label}
               </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
