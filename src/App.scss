@@ -8,6 +8,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 150px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -17,8 +24,12 @@ footer {
   text-align: center;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.colorBlock {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: $darkPurple;
 }

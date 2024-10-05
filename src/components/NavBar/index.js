@@ -40,6 +40,7 @@ function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{ color: "#1d1640" }}
             >
               <MenuIcon />
             </IconButton>
@@ -81,6 +82,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map(page =>
               <Link
+                key={page.label}
                 href={page.path}
                 sx={{ color: "#1d1640", textDecoration: "none" }}
               >
@@ -88,7 +90,7 @@ function ResponsiveAppBar() {
                   key={page.label}
                   tabIndex={-1}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, display: "block" }}
+                  sx={{ my: 2, display: "block", color: "#1d1640" }}
                 >
                   {page.label}
                 </Button>
