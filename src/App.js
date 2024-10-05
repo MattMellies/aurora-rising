@@ -1,11 +1,11 @@
-import './App.scss';
-import NavBar from './components/NavBar';
-import HomePage from './pages/home/index.js';
-import About from './pages/about/index.js';
-import Services from './pages/services/index.js';
-import FAQ from './pages/faq/index.js';
-import Booking from './pages/booking/index.js';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./App.scss";
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/home/index.js";
+import About from "./pages/about/index.js";
+import Services from "./pages/services/index.js";
+import FAQ from "./pages/faq/index.js";
+import Booking from "./pages/booking/index.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
