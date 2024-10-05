@@ -1,3 +1,8 @@
 export const constants = {
-    navBarItems: ["About", "Services", "FAQ", "Booking"],
+    navBarItems: [
+        {label: 'About', path: '/about'},
+        {label: 'Services', path: '/services'},
+        {label: 'FAQ', path: '/faq'},
+        {label: 'Booking', path: '/booking'}
+    ]
 }

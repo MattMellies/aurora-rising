@@ -1,6 +1,23 @@
 @import './styles/variables';
 @import './styles/global';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 body {
-  background-color: $darkPurple;
+  background-color: 'white';
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $teal;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
