@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/aurora-rising/static/css/main.cb8d3543.css",
-    "main.js": "/aurora-rising/static/js/main.25c6480c.js",
+    "main.js": "/aurora-rising/static/js/main.c266331d.js",
     "index.html": "/aurora-rising/index.html",
     "main.cb8d3543.css.map": "/aurora-rising/static/css/main.cb8d3543.css.map",
-    "main.25c6480c.js.map": "/aurora-rising/static/js/main.25c6480c.js.map"
+    "main.c266331d.js.map": "/aurora-rising/static/js/main.c266331d.js.map"
   },
   "entrypoints": [
     "static/css/main.cb8d3543.css",
-    "static/js/main.25c6480c.js"
+    "static/js/main.c266331d.js"
   ]
 }
