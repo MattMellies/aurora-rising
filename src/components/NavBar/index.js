@@ -12,10 +12,8 @@ import {constants} from './navBarConstants.js';
 import { Link } from '@mui/material';
 import Logo from '../../assets/images/logo.png';
 
-
-
-
 const pages = constants.navBarItems;
+const isStaging = window.location.href.includes('github') ? true : false;
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,7 +29,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{backgroundColor: "#b4dac3"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link href="/" sx={{marginRight: {xs: '0', md: '5em'}}}><img src={Logo} alt="Aurora Rising" /></Link>
+          <Link href={isStaging ? '/aurora-rising' : '/'} sx={{marginRight: {xs: '0', md: '5em'}}}><img src={Logo} alt="Aurora Rising" /></Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -62,14 +60,14 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={`${page.label}-mobile`} onClick={handleCloseNavMenu}>
-                  <Link href={page.path} sx={{ textAlign: 'center', color: '#1d1640', textDecoration: 'none' }}>{page.label}</Link>
+                  <Link href={isStaging ? `/aurora-rising${page.path}` : page.path} sx={{ textAlign: 'center', color: '#1d1640', textDecoration: 'none' }}>{page.label}</Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link href={`${page.path}`} sx={{color: "#1d1640", textDecoration: 'none'}}>
+              <Link href={isStaging ? `/aurora-rising${page.path}` : page.path} sx={{color: "#1d1640", textDecoration: 'none'}}>
               <Button
                 key={page.label}
                 tabIndex={-1}
