@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Box component={"div"} className="App">
       <Box
         component={"div"}
         sx={{
@@ -27,10 +27,10 @@ function App() {
           zIndex: -1
         }}
       />
-      <header className="App-header">
+      <Box component={"header"} className="App-header">
         <NavBar />
-      </header>
-      <main>
+      </Box>
+      <Box component={"main"}>
         <Grid2 container spacing={3}>
           <Grid2 size={{ xs: 0, lg: 5 }} />
           <Grid2 size={{ xs: 12, lg: 7 }}>
@@ -45,11 +45,11 @@ function App() {
             </BrowserRouter>
           </Grid2>
         </Grid2>
-      </main>
-      <footer>
+      </Box>
+      <Box component={"footer"} sx={{ zIndex: "999", position: "relative" }}>
         <p>footer</p>
-      </footer>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
