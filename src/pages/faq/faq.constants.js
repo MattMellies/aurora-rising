@@ -3,7 +3,7 @@ export const constants = {
     {
       question: "Do you offer sliding scale/reduced rates?",
       answer:
-        "We strive to ensure that services are accessible to everyone. If you have insurance or funding from FSCD (Family Support for Children with Disabilities) or PDD (Persons with Developmental Disabilities), we ask that you utilize those options first. If our rates are a hardship, please discuss this with your clinician. In some cases, we may be able to offer reduced rates when services are provided by students or provisional staff."
+        "For counselling and assessment services by a licensed psychologist we adhere to the fee schedule recommended by the Psychologists Association of Alberta. We understand that financial circumstances can vary, and we strive to ensure that services are accessible to everyone. If you have insurance or funding from FSCD (Family Support for Children with Disabilities) or PDD (Persons with Developmental Disabilities), we ask that you utilize those options first. We may be able to offer sliding scale rates for services based on individual needs or we may be able to provide services through a student or provisional psychologist under supervision at a reduced rate. Please reach out to us to discuss your specific situation, and we will work together to find a solution that fits your budget while ensuring you receive the support you deserve."
     },
     {
       question: "Do you accept private insurance?",

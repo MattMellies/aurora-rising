@@ -1,23 +1,35 @@
+import PageImage from "../../components/PageImage";
+import ChalkBoard from "../../assets/images/498219764.jpeg";
+import { servicesConstants } from "./services.constants";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
+
 const Services = () => {
   return (
     <div>
+      <PageImage image={ChalkBoard} />
       <h1>Services</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam
-        varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus
-        magna felis sollicitudin mauris.
-      </p>
+
+      {servicesConstants.service.map(service => {
+        return (
+          <Accordion key={service.title}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <h3>
+                {service.title}
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              {service.content.map(para => {
+                return (
+                  <p key={para}>
+                    {para}
+                  </p>
+                );
+              })}
+            </AccordionDetails>
+          </Accordion>
+        );
+      })}
     </div>
   );
 };

@@ -1,11 +1,14 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { constants } from "./faq.constants";
+import FAQImage from "./../../assets/images/231099575.jpeg";
+import PageImage from "../../components/PageImage";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const faqList = constants.FAQ;
 const FAQ = () => {
   return (
     <div>
+      <PageImage image={FAQImage} />
       <h1>FAQ</h1>
       {console.log(constants)}
       {faqList.map(faq => {

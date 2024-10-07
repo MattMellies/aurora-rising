@@ -26,10 +26,18 @@ footer {
 
 .colorBlock {
   width: 30%;
-  height: 100vh;
+  height: 100px;
+  overflow: hidden;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   background: $darkPurple;
+}
+
+.pageImage {
+  position: relative;
+  top: 50vh;
+  width: 20%;
+  height: auto;
 }

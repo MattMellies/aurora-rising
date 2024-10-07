@@ -3,6 +3,6 @@ export const constants = {
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
     { label: "FAQ", path: "/faq" },
-    { label: "Booking", path: "/booking" }
+    { label: "Contact Us", path: "/contact-us" }
   ]
 };
