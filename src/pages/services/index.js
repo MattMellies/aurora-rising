@@ -1,35 +1,33 @@
 import PageImage from "../../components/PageImage";
-import ChalkBoard from "../../assets/images/498219764.jpeg";
+import Banner from "../../assets/images/322613090.jpeg";
 import { servicesConstants } from "./services.constants";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 
 const Services = () => {
   return (
     <div>
-      <div className="bannerImage">
-        <PageImage image={ChalkBoard} />
+      <div className="bannerImage" style={{position: 'fixed', opacity: '0.2'}}>
+        <PageImage image={Banner} />
       </div>
-      <h1>Services</h1>
+      <div className="centered">
+        <h1>Services</h1>
+      </div>
 
       {servicesConstants.service.map(service => {
         return (
-          <Accordion key={service.title}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <h3>
-                {service.title}
-              </h3>
-            </AccordionSummary>
-            <AccordionDetails>
-              {service.content.map(para => {
-                return (
-                  <p key={para}>
-                    {para}
-                  </p>
-                );
-              })}
-            </AccordionDetails>
-          </Accordion>
+        <div className="lrContainer">
+          <div className="left" style={{width: '400px', position: 'relative', marginLeft: '100px'}}>
+            <h3>{service.title}</h3>
+          </div>
+          <div className="right" style={{width: '600px', marginRight: '180px'}}>
+            {service.content.map(para => {
+              return (
+                <p key={para} style={{position: 'relative', left: '10px'}}>
+                  {para}
+                </p>
+              );
+            })}
+          </div>
+        </div>
         );
       })}
     </div>
