@@ -8,7 +8,9 @@ const faqList = constants.FAQ;
 const FAQ = () => {
   return (
     <div>
-      <PageImage image={FAQImage} />
+      <div className="bannerImage">
+        <PageImage image={FAQImage} />
+      </div>
       <h1>FAQ</h1>
       {console.log(constants)}
       {faqList.map(faq => {

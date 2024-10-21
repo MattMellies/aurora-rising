@@ -9,35 +9,59 @@ body {
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  margin-bottom: 150px;
+  max-width: 1400px;
+  padding: 0px 1rem;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  margin-left: 100px;
+  box-shadow: none !important;
+  z-index: 999;
+}
+
+#navbarLogoContainer {
+  position: fixed;
+  display: block;
+  width: 200px;
+  height: 64px;
+  left: 0px;
+  background: white !important;
+}
+
+// Logo serving as the home button in the navbar.
+#navbarLogo {
+  position: fixed;
+  height: 60px;
+  top: 5px;
+  left: 25px;
+}
+
+.MuiButton-text {
+  color: white !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: $darkPurple !important;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  height: 40px;
   width: 100%;
-  background-color: $teal;
-  padding: 1rem;
+  color: white;
+  background-color: $darkPurple;
+  display: table; 
+}
+
+footer > p {
   text-align: center;
-}
-
-.colorBlock {
-  width: 30%;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: $darkPurple;
-}
-
-.pageImage {
-  position: relative;
-  top: 50vh;
-  width: 20%;
-  height: auto;
+  vertical-align: middle;
+  display: table-cell;
+  margin-block-start: 0px !important;
+  margin-block-end: 0px !important;
 }

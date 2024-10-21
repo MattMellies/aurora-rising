@@ -7,7 +7,9 @@ import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 const Services = () => {
   return (
     <div>
-      <PageImage image={ChalkBoard} />
+      <div className="bannerImage">
+        <PageImage image={ChalkBoard} />
+      </div>
       <h1>Services</h1>
 
       {servicesConstants.service.map(service => {

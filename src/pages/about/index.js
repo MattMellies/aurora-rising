@@ -1,10 +1,13 @@
 import LightBulb from "../../assets/images/442815932.jpeg";
 import PageImage from "../../components/PageImage";
+import AuroraImage from "../../assets/images/167720513.jpeg";
 
 const About = () => {
   return (
-    <div>
-      <PageImage image={LightBulb} />
+    <div className="pageContent">
+      <div className="bannerImage">
+        <PageImage image={LightBulb} />
+      </div>
       <h1>About Us</h1>
 
       <p>
@@ -48,6 +51,67 @@ const About = () => {
         We look forward to walking alongside you and your family as we embark on
         this journey together.
       </p>
+
+      <h1>Meet our Team</h1>
+
+      <div className="lrContainer">
+        <div className="left">
+          <PageImage image={AuroraImage}/>
+        </div>
+        <div className="right">
+          <h1>Jessica Bist (M.Sc.)</h1>
+          <h4>Behavior Specialist</h4>
+          <p>
+            Jessica has been working with individuals with disabilities since 2014,
+            with a passion for helping clients reach their goals. She holsds two Master of Science
+            degrees: one in Neuroscience and one in Psychology with a concentration in
+            Applied Behavior Analysis, and she is currently pursuing BCBA certification.
+            Jessica enjoys spending time with her husband and their baby, playing board games,
+            and grabbing a coffee with friends. She is dedicated to using evidence-based strategies
+            to support her communication, emotional regulation, and skill-building for her clients.
+          </p>
+        </div>
+      </div>
+
+      <div className="lrContainer">
+        <div className="left">
+          <h1>Kayla Mellies (M.Sc.)</h1>
+          <h4>Behavior Specialist</h4>
+          <p>
+            Kayla holds a Master's degree in Psychology with a specialization in Applied Behavior Analysis
+            and has worked in the disability field since 2011. She has extensive experience with children,
+            adolescents, and adults with intellectual and developmental disabilities, as well as mental
+            health diagnosis. Currently pursuing credentials as a Board Certified Behavior Analyst (BCBA),
+            Kayla is dedicated to empowering individuals through evidence-based strategies. Outside of work,
+            she is a Toronto Maple Leafs fan and enjoys time with her pets, including her cat, Bagheera,
+            and her dog, Oogie Boogie. A Haloween enthusiast, she loves celebrating the season with all things spooky.
+          </p>
+        </div>
+        <div className="right">
+          <PageImage image={AuroraImage}/>
+        </div>
+      </div>
+
+      <div className="lrContainer">
+        <div className="left">
+          <PageImage image={AuroraImage}/>
+        </div>
+        <div className="right">
+          <h1>Rosemarie Fabre (M.Sc., BCBA)</h1>
+          <h4>Registered Psychologist</h4>
+          <p>
+            Rosemarie is a Psychologist and Board-Certified Behavior Analyst with a strong commitment to enhancing
+            mental health. She has extensive experience providing psychological assessments, councelling, and
+            clinical supervision, supporting individuals with completx mental health issues, behavioral challenges,
+            and disabilities. Known for her collaborative and compassionate approach, Rosemarie is dedicated to
+            creating positive, lasting change in the lives she touches. Outside of work, she spends time with her
+            family which includes two children, who enjoy competitive gymnastics and taekwondo. In her free time,
+            Rosemarie loves playing video games and embracing the outdoors in the summer and fall seasons through
+            hiking, swimming, and creating her own little green oasis in her garden.
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 };

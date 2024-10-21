@@ -10,9 +10,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { constants } from "./navBarConstants.js";
 import { Link } from "@mui/material";
-import Logo from "../../assets/images/logo.png";
 
 const pages = constants.navBarItems;
+
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,13 +25,9 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#b4dac3" }}>
+    <AppBar position="static" id="navbar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link href={"/"} sx={{ marginRight: { xs: "0", md: "5em" } }}>
-            <img src={Logo} alt="Aurora Rising" />
-          </Link>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -90,7 +86,7 @@ function ResponsiveAppBar() {
                   key={page.label}
                   tabIndex={-1}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, display: "block", color: "#1d1640" }}
+                  
                 >
                   {page.label}
                 </Button>
